@@ -2,6 +2,11 @@ scp -p /User/Santy/Descargas/webyf.tar administrador@192.168.1.0:/home/admin/Des
 
 -------------origen-------------------------------ssh--------------------destino
 
-httpd (Apache)
+httpd (Apache) or apache2
 
 html5 (pagina web)
+----------------------------------------------------
+para el servidor apache - habilitar el firewall 
+sudo ufw enable
+---------------------------------------------------
+
