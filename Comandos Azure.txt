@@ -17,3 +17,19 @@ sudo ufw enable
     # yum install --enablerepo="epel" ufw -y
 # apt-get install ufw
 
+
+Para conectar una máquina virtual (VM) a una base de datos en Azure dentro del mismo grupo de recursos, puedes seguir los siguientes pasos:
+
+Crea el grupo de recursos: Si aún no tienes un grupo de recursos, puedes crear uno en Azure Portal. Un grupo de recursos te permite organizar y administrar los recursos relacionados.
+
+Crea la máquina virtual: En el mismo grupo de recursos, crea una máquina virtual que se utilizará para conectarse a la base de datos. Puedes seleccionar la imagen y la configuración que mejor se adapte a tus necesidades.
+
+Crea la base de datos: Dentro del mismo grupo de recursos, crea una base de datos en Azure. Puedes elegir entre varias opciones de bases de datos, como Azure SQL Database, Azure Database for MySQL o Azure Database for PostgreSQL, según tus requisitos.
+
+Configura la red virtual: Asegúrate de que tanto la máquina virtual como la base de datos estén configuradas para utilizar la misma red virtual o la red virtual peering. Esto permite que los recursos se comuniquen dentro de la red virtual de forma segura.
+
+Configura las reglas de firewall y seguridad: En la configuración de la base de datos, asegúrate de permitir el acceso desde la dirección IP de la máquina virtual o desde la subred en la que se encuentra la máquina virtual. Esto garantizará que la máquina virtual pueda establecer una conexión con la base de datos.
+
+Conéctate a la base de datos desde la máquina virtual: Utiliza las credenciales y la cadena de conexión proporcionadas por la base de datos para conectarte desde la máquina virtual. Puedes utilizar herramientas como SQL Server Management Studio (SSMS) o la línea de comandos para establecer la conexión y ejecutar consultas.
+
+Recuerda que los pasos exactos pueden variar dependiendo del tipo de base de datos y la configuración específica de tu entorno en Azure. Asegúrate de consultar la documentación oficial de Azure para obtener instrucciones detalladas según tus necesidades particulares
