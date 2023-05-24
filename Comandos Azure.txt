@@ -10,3 +10,10 @@ para el servidor apache - habilitar el firewall
 sudo ufw enable
 ---------------------------------------------------
 
+
+
+    # yum install epel-release -y
+
+    # yum install --enablerepo="epel" ufw -y
+# apt-get install ufw
+
